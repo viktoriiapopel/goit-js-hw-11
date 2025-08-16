@@ -3,7 +3,7 @@
 import axios from 'axios';
 
 
-// Твій ключ з Pixabay
+
 const API_KEY = '51801450-0916bf82cabb3a5bfe1ad6ca6'; 
 const BASE_URL = 'https://pixabay.com/api/';
 
@@ -21,7 +21,7 @@ export async function getImagesByQuery(query) {
     });
 
     if (!response.data || !response.data.hits) {
-      return { hits: [] }; // повертаємо порожній масив, щоб main.js не падав
+      return { hits: [] }; 
     }
 
     return response.data; 

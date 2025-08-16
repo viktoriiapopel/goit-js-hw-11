@@ -31,12 +31,12 @@ async function searchImages(query) {
       position: 'topRight',
     });
   } finally {
-    hideLoader(); // ✅ ховаємо лоадер після завершення запиту
+    hideLoader();
   }
 }
 
 formEl.addEventListener('submit', event => {
-  event.preventDefault(); // щоб сторінка не перезавантажувалась
+  event.preventDefault(); 
   const query = inputEl.value.trim();
 
   if (!query) {
